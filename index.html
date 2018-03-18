@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<!-- Custom style -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="js/init.js"> -->
 </head>
 <body>
 	<!-- HEADER START -->
@@ -41,6 +42,7 @@
 	<!-- HEADER END -->
 	<!-- MAIN START -->
 	<div class="main">
+
 		<div class="inner">
 			<div class="inner-content">
 				<h1>Thomas Rhythm</h1>
@@ -49,7 +51,7 @@
 			<!-- / inner-content -->
 		</div>
 		<!-- / inner -->
-		<!-- about-studio -->
+
 		<div class="default-section about-studio">
 			<div class="container">
 				<div class="title section-title">
@@ -80,7 +82,16 @@
 							<div class="team-item">
 								<div class="team-item-img">
 									<img src="img/team-item-1.jpg" alt="">
-									<div class="team-item-skills"></div>
+									<div class="team-item-skills">
+										<span class="skills-title title title-white">skills</span>
+										<span class="skills-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+										<div class="bars">
+											<span>Branding</span>
+											<span>Design</span>
+											<span>Development</span>
+											<span>Photography</span>
+										</div>
+									</div>
 								</div>
 								<!-- / team-item-img -->
 								<div class="team-item-info text-center title">
@@ -96,7 +107,16 @@
 							<div class="team-item">
 								<div class="team-item-img">
 									<img src="img/team-item-2.jpg" alt="">
-									<div class="team-item-skills"></div>
+									<div class="team-item-skills">
+										<span class="skills-title title title-white">skills</span>
+										<span class="skills-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+										<div class="bars">
+											<span>Branding</span>
+											<span>Design</span>
+											<span>Development</span>
+											<span>Photography</span>
+										</div>
+									</div>
 								</div>
 								<!-- / team-item-img -->
 								<div class="team-item-info text-center title">
@@ -144,96 +164,171 @@
 		<!-- / about-studio -->
 
 		<!-- SERVICES -->
-		<div class="default-section services-all">
+		<div class="default-section services">
 			<div class="container">
 				<div class="title section-title text-center">
 					<span>Services</span>
 				</div>
 				<!-- / title -->
-				<div class="row">
-					<div class="col col-2">
-						<div class="icon-services text-center">
-							<a href="">
-								<i class="icon-strategy"></i>
-							</a>
+				<div class="tabs-wrapper">
+					<div id="tabs">
+						<ul class="tabs-nav text-center">
+							<li>
+								<a href="#branding">
+									<span class="icon icon-strategy"></span>
+									<span class="default-title">Branding</span>
+								</a>
+							</li>
+							<li>
+								<a href="#web-design">
+									<span class="icon icon-desktop"></span>
+									<span class="default-title">Web Design</span>
+								</a>
+							</li>
+							<li>
+								<a href="#graphic-design">
+									<span class="icon icon-tools"></span>
+									<span class="default-title">Graphic Design</span>
+								</a>
+							</li>
+							<li>
+								<a href="#development">
+									<span class="icon icon-gears"></span>
+									<span class="default-title">Development</span>
+								</a>
+							</li>
+							<li>
+								<a href="#photography">
+									<span class="icon icon-camera"></span>
+									<span class="default-title">Photography</span>
+								</a>
+							</li>
+						</ul>
+						<div id="branding">
+							<div class="row">
+								<div class="col col-4">
+									<blockquote>
+										<p>A brand for a company is like 
+										a reputation for a person. You earn reputation by trying to do hard things well.</p>
+										<span>— Louis Kahn</span>
+									</blockquote>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p>
+								</div>
+								<!-- / col  -->
+							</div>
+							<!-- / row  -->
+						</div>	
+						<div id="web-design">
+							<div class="row">
+								<div class="col col-4">
+									<blockquote>
+										<p>Web-design. A brand for a company is like 
+										a reputation for a person. You earn reputation by trying to do hard things well.</p>
+										<span>— Louis Kahn</span>
+									</blockquote>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p>
+								</div>
+								<!-- / col  -->
+							</div>
+							<!-- / row  -->
 						</div>
-						<div class="default-title title-services">
-							<a href="">Branding</a>
+						<div id="graphic-design">
+							<div class="row">
+								<div class="col col-4">
+									<blockquote>
+										<p>Graphic-design. A brand for a company is like 
+										a reputation for a person. You earn reputation by trying to do hard things well.</p>
+										<span>— Louis Kahn</span>
+									</blockquote>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p>
+								</div>
+								<!-- / col  -->
+							</div>
+							<!-- / row  -->
+						</div>
+						<div id="development">
+							<div class="row">
+								<div class="col col-4">
+									<blockquote>
+										<p>Development. A brand for a company is like 
+										a reputation for a person. You earn reputation by trying to do hard things well.</p>
+										<span>— Louis Kahn</span>
+									</blockquote>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p>
+								</div>
+								<!-- / col  -->
+							</div>
+							<!-- / row  -->
+						</div>
+						<div id="photography">
+							<div class="row">
+								<div class="col col-4">
+									<blockquote>
+										<p>Photography. A brand for a company is like 
+										a reputation for a person. You earn reputation by trying to do hard things well.</p>
+										<span>— Louis Kahn</span>
+									</blockquote>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p>
+								</div>
+								<!-- / col  -->
+								<div class="col col-4">
+									<p class="default-text">Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p>
+								</div>
+								<!-- / col  -->
+							</div>
+							<!-- / row  -->
 						</div>
 					</div>
-					<!-- / col  -->
-					<div class="col col-2">
-						<div class="icon-services text-center">
-							<a href="">
-								<i class="icon-desktop"></i>
-							</a>
-						</div>
-						<div class="default-title title-services">
-							<a href="">Web Design</a>
-						</div>
-					</div>
-					<!-- / col  -->
-					<div class="col col-2">
-						<div class="icon-services text-center">
-							<a href="">
-								<i class="icon-tools"></i>
-							</a>
-						</div>
-						<div class="default-title title-services">
-							<a href="">Graphic Design</a>
-						</div>
-					</div>
-					<!-- / col  -->
-					<div class="col col-2">
-						<div class="icon-services text-center">
-							<a href="">
-								<i class="icon-gears"></i>
-							</a>
-						</div>
-						<div class="default-title title-services">
-							<a href="">Development</a>
-						</div>
-					</div>
-					<!-- / col  -->
-					<div class="col col-2">
-						<div class="icon-services text-center">
-							<a href="">
-								<i class="icon-camera"></i>
-							</a>
-						</div>
-						<div class="default-title title-services">
-							<a href="">Photography</a>
-						</div>
-					</div>
-					<!-- / col  -->
+					<!-- / tabs -->
 				</div>
-				<!-- / row  -->
-				<div class="row">
-					<div class="col col-4">
-						<blockquote>
-							<p>A brand for a company is like 
-							a reputation for a person. You earn reputation by trying to do hard things well.</p>
-							<span>— Louis Kahn</span>
-						</blockquote>
-					</div>
-					<!-- / col  -->
-					<div class="col col-4">
-						<p class="default-text">Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p>
-					</div>
-					<!-- / col  -->
-					<div class="col col-4">
-						<p class="default-text">Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p>
-					</div>
-					<!-- / col  -->
-				</div>
-				<!-- / row  -->
+				<!-- / tabs-wrapper -->
 			</div>
 			<!-- / container -->
 		</div>
-		<!-- SERVICES-ALL end-->
+		<!-- / services end-->
+		<div class="default-section portfolio">
+			<div class="container">
+				<div class="title section-title text-center">
+					<span>Portfolio</span>
+				</div>
+				<!-- / title -->
 
+			</div>
+			<!-- / container	 -->
+		</div>
+		<!-- / portfolio -->
 
-		<!-- why-choose-us -->
 		<div class="default-section why-choose">
 			<div class="container">
 				<div class="title section-title text-center">
@@ -395,5 +490,12 @@
 				<!-- / news end -->
 			</div>
 			<!-- MAIN END -->
+
+			<!-- jQuery -->
+			<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			<!-- jQuery UI-->
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<!-- Init plugins -->
+			<script src="js/init.js"></script>
 		</body>
 		</html>

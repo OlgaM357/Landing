@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus{
+	outline: none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -138,6 +141,7 @@ blockquote {
 		font-size: 13px;
 		font-weight: 400;
 		text-transform: uppercase;
+		letter-spacing: .2em;
 	}
 	.btn.btn-default {
 		background-color: #e5e5e5;
@@ -221,11 +225,8 @@ blockquote {
 	}
 	/*inner and*/
 	/*about-studio*/
-	.about-studio{
-		overflow: hidden;
-	}
 	.team-wrapper {
-		padding-top: 200px;
+		margin-top: 100px;
 	}
 	.team-item .team-item-img{
 		position: relative;
@@ -247,7 +248,6 @@ blockquote {
 	.team-item span{
 		display: block;
 	}	
-
 	.team-item .team-item-info{
 		font-weight: 400;
 		text-indent: .4em;
@@ -283,34 +283,41 @@ blockquote {
 		letter-spacing: .2em;
 		line-height: 38px;
 	}
+	.about-studio{
+		border-bottom: 1px dotted #ececec;
+	}
 	/* about-studio and */
-	/* services start */
-	.services-all{
-		overflow: hidden;
+	/* services  */
+	#tabs .tabs-nav li{
+		float: left;
+		width: 20%;
+		color: #888888;
+		margin-bottom: 80px;
 	}
-	.services-all .title-services{
-		padding-bottom: 80px;
+	#tabs .tabs-nav li span{
+		display: block;
 	}
-	.services-all .icon-services{
+	#tabs .icon{
 		font-size: 48.01px;
 		letter-spacing: .5em;
-		font-weight: 400;
-		color: #111;
-		padding-bottom: 35px;
+		margin-bottom: 35px;
 	}
+	.tabs-nav .ui-state-active span{
+		color: #111;
+	}
+	
 	/* services end */
 	/*why-choose */
-	.why-choose{
-		overflow: hidden;
-	}
-	.why-choose .title-why-choose{
-		padding-bottom: 35px;
+	.why-choose .row+.row{
+		margin-top: 80px;
 	}
 	.icon-why-choose{
 		font-size: 80px;
 		color: #111;
-		padding-top: 60px;
-		padding-bottom: 50px; 
+		margin-bottom: 50px; 
+	}
+	.why-choose .title-why-choose{
+		margin-bottom: 30px;
 	}
 	/*why-choose and*/
 	/*news*/
@@ -341,7 +348,6 @@ blockquote {
 	}
 	.news .btn.btn-xs{
 		background-color: #e5e5e5;
-		letter-spacing: .2em;
 		margin-top: 28px;
 	}
 	.news .btn.btn-xs:hover{
