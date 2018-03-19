@@ -33,9 +33,20 @@ ul, ol{
 img {
 	max-width: 100%;
 }
+input,
+textarea,
 button {
 	outline: none;
 	border: none;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+textarea {
+	resize: vertical;
+}
+input[type="submit"]{
 	cursor: pointer;
 }
 blockquote {
@@ -100,6 +111,7 @@ blockquote {
 		letter-spacing: .3em;
 		margin-bottom: 20px;
 		font-weight: 300;
+		line-height: 1.7333;
 	}
 	.default-text-small{
 		font-family: 'Dosis', sans-serif;
@@ -138,10 +150,15 @@ blockquote {
 		padding: 12px 20px;
 		border-radius: 2px;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
 		letter-spacing: .2em;
+		line-height: 1;
+	}
+	.btn[disabled]{
+		cursor: not-allowed;
+		opacity: .6;
 	}
 	.btn.btn-default {
 		background-color: #e5e5e5;
@@ -160,6 +177,44 @@ blockquote {
 	.btn.btn-xs {
 		padding: 7px 15px;
 		font-size: 11px;
+	}
+	.form-control{
+		width: 100%;
+		border: 1px solid #e5e5e5;
+		border-radius: 2px;
+		height: 36px;
+		font-size: 12px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		color: #777;
+		padding-left: 13px;
+		padding-right: 13px;
+	}
+	.form-control:focus{
+		border-color: #111;
+	}
+	textarea.form-control{
+		min-height: 82px;
+		padding-top: 10px;
+	}
+	.form-control[disabled],
+	.form-control.disabled{
+		cursor: not-allowed;
+		opacity: .6;
+	}
+	.form-control.error{
+		border-color: #f57e7e;
+	}
+	.form-info {
+		font-size: 11px;
+		font-weight: 400;
+		color: #aaa;
+	}
+	.form-info .fa {
+		font-size: 12px;
+		margin-right: 3px;
 	}
 	.header {
 		overflow: hidden;
@@ -188,6 +243,11 @@ blockquote {
 		margin-left: 35px;
 	}
 	/* ===== Default component end ===== */
+	/* ===== Guide styles start ===== */
+	.guide-section form .form-control{
+		margin-bottom: 10px;
+	}
+	/* ===== Guide styles end ===== */
 	/* ===== Custom styles start ===== */
 	.inner{
 		background-image: url('../img/inner-bg.jpg');
@@ -223,8 +283,8 @@ blockquote {
 		margin-top: 100px;
 		color: #fefefe;
 	}
-	/*inner and*/
-	/*about-studio*/
+	/*----------inner end-------*/
+	/*----------about-studio*/
 	.team-wrapper {
 		margin-top: 100px;
 	}
@@ -286,12 +346,12 @@ blockquote {
 	.about-studio{
 		border-bottom: 1px dotted #ececec;
 	}
-	/* about-studio and */
-	/* services  */
+	/*-------about-studio and----*/
+	/*-------services------------*/
 	#tabs .tabs-nav li{
 		float: left;
 		width: 20%;
-		color: #888888;
+		color: rgba:(17, 17, 17, 0.50em);
 		margin-bottom: 80px;
 	}
 	#tabs .tabs-nav li span{
@@ -305,9 +365,30 @@ blockquote {
 	.tabs-nav .ui-state-active span{
 		color: #111;
 	}
-	
-	/* services end */
-	/*why-choose */
+	/*---------services end--------- */
+	/*---------lets talk-------------*/
+	.lets-talk-content{
+		padding: 140px 0;
+	}
+	.lets-talk-content p{
+		color: rgba(255, 255, 255, .7);
+		line-height: 1.7333;
+		margin-bottom: 35px;
+	}
+	.lets-talk .lets-talk-img{
+		margin-top: -32px;
+	}
+	/*----------lets-talk end--------*/
+	/*----------like-our-------------*/
+	.like-our-content{
+		padding: 68px 0;
+	}
+	.like-our-content span{
+		display: block;
+		margin-bottom: 20px;
+	}
+	/*----------like-our end----------*/
+	/*----------why-choose-----------*/
 	.why-choose .row+.row{
 		margin-top: 80px;
 	}
@@ -319,8 +400,8 @@ blockquote {
 	.why-choose .title-why-choose{
 		margin-bottom: 30px;
 	}
-	/*why-choose and*/
-	/*news*/
+	/*---------why-choose end---------*/
+	/*---------news-------------------*/
 	.news .section-title{
 		position: relative;
 		padding: 10px 0;
@@ -352,7 +433,7 @@ blockquote {
 	}
 	.news .btn.btn-xs:hover{
 		color:#111;
-		background-color: #999;
+		background-color: #d3d0d0;
 	}
 	.news-item img{
 		padding-bottom: 30px;
@@ -364,5 +445,13 @@ blockquote {
 		-webkit-filter: none;
 		filter: none;
 	}
-	/*news end*/
+	/*-------news end--------*/
+	/*-------subscribe-----*/
+	.subscribe form .form-control {
+		max-width: 290px;
+	}
+	.subscribe .form-info {
+		margin-top: 17px;
+	}
+	/*-------subscribe end-----*/
 	/* ===== Custom styles end ===== */
