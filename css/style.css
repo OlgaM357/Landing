@@ -351,7 +351,7 @@ blockquote {
 	#tabs .tabs-nav li{
 		float: left;
 		width: 20%;
-		color: rgba:(17, 17, 17, 0.50em);
+		color: rgba(17, 17, 17, .5);
 		margin-bottom: 80px;
 	}
 	#tabs .tabs-nav li span{
@@ -362,7 +362,7 @@ blockquote {
 		letter-spacing: .5em;
 		margin-bottom: 35px;
 	}
-	.tabs-nav .ui-state-active span{
+	#tabs .tabs-nav .ui-state-active span{
 		color: #111;
 	}
 	/*---------services end--------- */
@@ -379,6 +379,50 @@ blockquote {
 		margin-top: -32px;
 	}
 	/*----------lets-talk end--------*/
+	/*----------portfolio------------*/
+	.portfolio{
+		margin-top: 135px;
+		overflow: hidden;
+	}
+	.portfolio p{
+		display: inline-block;
+		width: 754px;
+		line-height: 1.7333;
+		margin-bottom: 82px;
+	}
+	#tabs-portfolio .tabs-nav li{
+		font-family: 'Dosis', sans-serif;
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: .4em;
+		text-transform: uppercase;
+		color: rgba(17, 17, 17, .5);
+		display: inline-block;
+		width: 9%;
+		margin-bottom: 80px;
+	}
+	#tabs-portfolio .tabs-nav .ui-state-active a{
+		color:#111;
+	}
+	.portfolio-content{
+		margin: 0 -15px;	
+	}
+	 .portfolio-item{
+	 	width: 33.3333%;
+	    float: left;
+		padding: 0 4px;
+		margin-bottom: 5px;
+	}
+	.portfolio-item img{
+		width:100%;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		transition: .2s;	
+	}
+	.portfolio-item img:hover{
+        filter: none;
+	}
+	/*----------portfolio end--------*/
 	/*----------like-our-------------*/
 	.like-our-content{
 		padding: 68px 0;
@@ -387,7 +431,7 @@ blockquote {
 		display: block;
 		margin-bottom: 20px;
 	}
-	/*----------like-our end----------*/
+	/*----------like-our end---------*/
 	/*----------why-choose-----------*/
 	.why-choose .row+.row{
 		margin-top: 80px;
