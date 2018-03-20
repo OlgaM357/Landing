@@ -386,7 +386,7 @@ blockquote {
 	}
 	.portfolio p{
 		display: inline-block;
-		width: 754px;
+		max-width: 754px;
 		line-height: 1.7333;
 		margin-bottom: 82px;
 	}
@@ -398,8 +398,10 @@ blockquote {
 		text-transform: uppercase;
 		color: rgba(17, 17, 17, .5);
 		display: inline-block;
-		width: 9%;
 		margin-bottom: 80px;
+	}
+	#tabs-portfolio .tabs-nav li + li {
+		margin-left: 65px;
 	}
 	#tabs-portfolio .tabs-nav .ui-state-active a{
 		color:#111;
