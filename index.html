@@ -6,6 +6,8 @@
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<!-- Slick styles -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
 	<!-- Et-line icons -->
 	<link rel="stylesheet" href="css/et-line.css">
 	<!-- Font awesome -->
@@ -346,23 +348,23 @@
 			<!-- / container-->
 			<div class="portfolio-content text-center">
 				<div class="container-fluid">	
-					<div class="tabs-wrapper">
-						<div id="tabs-portfolio">
-							<ul class="tabs-nav">
-								<li>
-									<a href="#all-works-portfolio"><span>All Works</span></a>
-								</li>
-								<li>
-									<a href="#branding-portfolio"><span>Branding</span></a>
-								</li>
-								<li>
-									<a href="#design-portfolio"><span>Design</span></a>
-								</li>
-								<li>
-									<a href="#photography-portfolio"><span>Photography</span></a>
-								</li>
-							</ul>
-							<!-- / tabs-nav -->
+					<div id="tabs-portfolio">
+						<ul class="tabs-nav">
+							<li>
+								<a href="#all-works-portfolio"><span>All Works</span></a>
+							</li>
+							<li>
+								<a href="#branding-portfolio"><span>Branding</span></a>
+							</li>
+							<li>
+								<a href="#design-portfolio"><span>Design</span></a>
+							</li>
+							<li>
+								<a href="#photography-portfolio"><span>Photography</span></a>
+							</li>
+						</ul>
+						<!-- / tabs-nav -->
+						<div class="portfolio-item-wrapper">
 							<div id="all-works-portfolio">
 								<div class="portfolio-item">
 									<img src="img/portfolio-item-1.png" alt="">
@@ -418,16 +420,16 @@
 							</div>
 							<!-- / photography -->
 						</div>
-						<!-- / tabs-portfolio -->
+						<!-- / portfolio-item-wrapper -->
 					</div>
-					<!-- / tabs-wrapper -->
+					<!-- / tabs-portfolio -->
 				</div>
 				<!-- / container-fluid -->
 			</div>
 			<!-- / portfolio-content -->
 		</div>
 		<!-- / portfolio -->
-		<div class="like-our bg-black">
+		<div class="like-our bg-black small-section">
 			<div class="container">
 				<div class="like-our-content text-center">
 					<div class="title section-title-light title-white">
@@ -535,10 +537,70 @@
 			<!-- / container  -->
 		</div>
 		<!-- / why-choose-us  -->
+
+		<div class="reviews bg-black">
+			<div class="reviews-carousel">
+				<div>
+					<div class="slide-content">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-light title-white">
+							<span>What people say?</span>
+						</div>
+						<!-- / title -->
+						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue, risus utaliquam dapibus. Thanks!</p>
+						<span class="review-author">— John Doe, doodle inc.</span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+				<div>
+					<div class="slide-content text-center">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-light title-white">
+							<span>What people say?</span>
+						</div>
+						<!-- / title -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit a quas deserunt magni aperiam iusto ratione neque at, ipsam sapiente possimus, iste dolores minima ea commodi pariatur blanditiis, odio! Magnam!</p>
+						<span class="review-author">— John Doe, doodle inc.</span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+				<div>
+					<div class="slide-content text-center">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-light title-white">
+							<span>What people say?</span>
+						</div>
+						<!-- / title -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit a quas deserunt magni aperiam iusto ratione neque at, ipsam sapiente possimus, iste dolores minima ea commodi pariatur blanditiis, odio! Magnam!</p>
+						<span class="review-author">— John Doe, doodle inc.</span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+
+				<div>
+					<div class="slide-content text-center">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-light title-white">
+							<span>What people say?</span>
+						</div>
+						<!-- / title -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit a quas deserunt magni aperiam iusto ratione neque at, ipsam sapiente possimus, iste dolores minima ea commodi pariatur blanditiis, odio! Magnam!</p>
+						<span class="review-author">— John Doe, doodle inc.</span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+			</div>
+		</div>
+		<!-- / reviews -->
 		<div class="default-section news">
 			<div class="container">
 				<div class="title section-title">
-					<span>Latest News<a class="default-text-small" href="">All News in our blog ></a></span>
+					<span>Latest News</span>
+					<a class="default-text-small" href="">All News in our blog ></a>
 				</div>
 				<!-- / title -->
 				<div class="row">
@@ -599,7 +661,7 @@
 			<!-- / container -->
 		</div>
 		<!-- / news end -->
-		<div class="small-section subscribe bg-grey text-center">
+		<div class="small-section subscribe bg-grey  text-center">
 			<div class="container">
 				<div class="title section-title-light">
 					<span>Stay informed with OUR NEWSLETTER</span>
@@ -616,13 +678,112 @@
 			<!-- / container -->
 		</div>
 		<!-- / subscribe -->
+
+		<div class="default-section contacts">
+			<div class="container">
+				<div class="title section-title text-center">
+					<span>Contact</span>
+				</div>
+				<!-- / title -->
+				<div class="row">
+					<div class="col col-8 m-auto">
+						<div class="contact-items-wrapper">
+							<div class="row">
+								<div class="col col-4">
+									<div class="contact-item">
+										<div class="rhomb-icon black-icon contact-item-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+										<!-- / rhomb-icon -->
+										<div class="contact-item-content">
+											<span class="contact-title">Call us</span>
+											<span class="contact-data">+61 3 8376 6284</span>
+										</div>
+										<!-- / contact-item-content -->
+									</div>
+								</div>
+								<!-- / col -->
+								<div class="col col-4">
+									<div class="contact-item">
+										<div class="rhomb-icon black-icon contact-item-icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<!-- / rhomb-icon -->
+										<div class="contact-item-content">
+											<span class="contact-title">Address</span>
+											<span class="contact-data">245 Quigley Blvd, Ste K</span>
+										</div>
+										<!-- / contact-item-content -->
+									</div>
+								</div>
+								<!-- / col -->
+								<div class="col col-4">
+									<div class="contact-item">
+										<div class="rhomb-icon black-icon contact-item-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<!-- / rhomb-icon -->
+										<div class="contact-item-content">
+											<span class="contact-title">Email</span>
+											<span class="contact-data">support@bestlooker.pro</span>
+										</div>
+										<!-- / contact-item-content -->
+									</div>
+								</div>
+								<!-- / col -->
+							</div>
+							<!-- / row -->
+						</div>	
+						<!-- / contact-items-wrapper -->
+						<form class="contact-form">
+
+						</form>
+						<!-- / contact-form -->
+					</div>
+					<!-- / col -->
+				</div>
+				<!-- / row -->
+			</div>
+			<!-- / container -->
+		</div>
+		<!-- / contacts -->
 	</div>
 	<!-- MAIN END -->
 
+	<!-- FOOTER -->
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="footer-content text-center">
+				<div class="logo">
+					<img src="img/logo-footer.png" alt="">
+				</div>
+				<!-- / logo -->
+				<ul class="footer-nav">
+					<li><a class="rhomb-icon transparent-iblack-icon social-item-icon" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="rhomb-icon transparent-iblack-icon social-item-icon" href="#"><i class="fa  fa-twitter"></i></a></li>
+					<li><a class="rhomb-icon transparent-iblack-icon social-item-icon" href="#"><i class="fa fa-behance"></i></a></li>
+					<li><a class="rhomb-icon transparent-iblack-icon social-item-icon" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					<li><a class="rhomb-icon transparent-iblack-icon social-item-icon" href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+				<!-- / footer-nav -->
+				<span class="footer-info"><i class="fa fa-copyright"></i>Rhythm 2014</span>
+				<span class="footer-text">Made with love for great people</span>
+				<div>
+					<a class="triangle-up" href="#"></a>
+				</div>
+			</div>
+			<!-- / footer-content -->
+		</div>
+		<!-- / container -->
+	</div>
+	<!-- FOOTER END-->
+	
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<!-- jQuery UI-->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Plugins slick-carousel-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<!-- Init plugins -->
 	<script src="js/init.js"></script>
 </body>

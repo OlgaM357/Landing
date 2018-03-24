@@ -72,6 +72,11 @@ blockquote {
 	.bg-grey {
 		background-color: #f8f8f8;
 	}
+	.m-auto {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	/* ===== Default classes end */
 	/* ===== Default component start ===== */
 	
@@ -216,6 +221,38 @@ blockquote {
 		font-size: 12px;
 		margin-right: 3px;
 	}
+	.rhomb-icon {
+		display: inline-block;
+		width: 23px;
+		height: 23px;
+		text-align: center;
+		line-height: 23px;
+		border-radius: 2px;
+		font-size: 14px;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.rhomb-icon i{
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	.rhomb-icon.black-icon{
+		color:#fff;
+		background-color: #111;
+	}
+	.rhomb-icon.transparent-iblack-icon.social-item-icon {	
+		display: inline-block;
+		width:25px;
+		height:25px;
+		background-color: rgba(255, 255, 255, 1);
+		border: 1px solid #000;
+		color:#111;
+	}
+	/*-------  header  ------*/
 	.header {
 		overflow: hidden;
 		position: fixed;
@@ -239,9 +276,64 @@ blockquote {
 		letter-spacing: .3em;
 		line-height: 23px;	
 	}
-	.header .header-nav li + li {
+	.header .header-nav li+li {
 		margin-left: 35px;
 	}
+	/*--------  header end ---*/
+	/*--------  footer  ------*/
+	.footer{
+		position: relative;
+		padding-top: 140px;
+		padding-bottom: 60px;
+	}
+	.footer-content.logo {
+		display: inline;
+		max-width: 78px;
+	}
+	.footer-nav {
+		margin-top: 22px;
+	}
+	.footer .footer-nav li{
+		display: inline-block;
+		width: 4%;
+	}
+	.footer .footer-nav li + li{
+		margin-left: 10px;
+	}
+	.footer span{
+		display: block;
+		font-size: 12px;
+		font-family: 'Dosis';
+		font-weight: 400;
+	}
+	.footer span.footer-info{
+		text-transform: uppercase;
+		letter-spacing: .3em;
+		color: #111;
+		margin-top: 108px;
+	}
+	.footer .footer-info i {
+		margin-right: 15px;
+	}
+	.rhomb-icon.transparent-iblack-icon.social-item-icon{
+
+	}
+	.footer span.footer-text {
+		color: #777;
+		margin-top: 15px;
+	}
+	.triangle-up {
+		width: 0;
+		height: 0;
+		border-bottom: 25px solid rgba(198, 198, 198, .5);
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		border-radius: 3px;
+		position: fixed;
+		bottom: 25px;
+		right: 30px;
+	}
+	/*------  footer end  -----*/
 	/* ===== Default component end ===== */
 	/* ===== Guide styles start ===== */
 	.guide-section form .form-control{
@@ -348,11 +440,15 @@ blockquote {
 	}
 	/*-------about-studio and----*/
 	/*-------services------------*/
+	#tabs .tabs-nav{
+		overflow: hidden;
+		margin-bottom: 80px;
+	}
 	#tabs .tabs-nav li{
 		float: left;
 		width: 20%;
 		color: rgba(17, 17, 17, .5);
-		margin-bottom: 80px;
+		text-align: center;
 	}
 	#tabs .tabs-nav li span{
 		display: block;
@@ -382,23 +478,24 @@ blockquote {
 	/*----------portfolio------------*/
 	.portfolio{
 		margin-top: 135px;
-		overflow: hidden;
 	}
 	.portfolio p{
 		display: inline-block;
 		max-width: 754px;
 		line-height: 1.7333;
-		margin-bottom: 82px;
+	}
+	#tabs-portfolio {
+		overflow: hidden;
+		margin:  82px -15px 5px -15px;
 	}
 	#tabs-portfolio .tabs-nav li{
+		display: inline-block;
 		font-family: 'Dosis', sans-serif;
 		font-size: 13px;
 		font-weight: 400;
 		letter-spacing: .4em;
 		text-transform: uppercase;
 		color: rgba(17, 17, 17, .5);
-		display: inline-block;
-		margin-bottom: 80px;
 	}
 	#tabs-portfolio .tabs-nav li + li {
 		margin-left: 65px;
@@ -406,14 +503,16 @@ blockquote {
 	#tabs-portfolio .tabs-nav .ui-state-active a{
 		color:#111;
 	}
-	.portfolio-content{
-		margin: 0 -15px;	
+	.portfolio-item-wrapper{
+		margin: 80px -4px 0 -4px;
 	}
-	 .portfolio-item{
-	 	width: 33.3333%;
-	    float: left;
+	.portfolio-item{
+		width: 33.3333%;
+		float: left;
 		padding: 0 4px;
-		margin-bottom: 5px;
+	}
+	.portfolio-item+.portfolio-item{
+		margin-top: 5px;
 	}
 	.portfolio-item img{
 		width:100%;
@@ -422,13 +521,10 @@ blockquote {
 		transition: .2s;	
 	}
 	.portfolio-item img:hover{
-        filter: none;
+		filter: none;
 	}
 	/*----------portfolio end--------*/
 	/*----------like-our-------------*/
-	.like-our-content{
-		padding: 68px 0;
-	}
 	.like-our-content span{
 		display: block;
 		margin-bottom: 20px;
@@ -447,6 +543,110 @@ blockquote {
 		margin-bottom: 30px;
 	}
 	/*---------why-choose end---------*/
+	/*---------review carousel--------*/
+	.reviews-carousel{
+		padding: 135px 0;
+		overflow: hidden;
+		text-align: center;
+	}
+	.reviews-carousel::before{
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-left: -4px;
+	}
+	.slide-content{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.reviews-carousel .icon {
+		font-size: 32px;
+		line-height: 1.5;
+		color: #fff;
+	}
+	.reviews-carousel p{
+		max-width: 735px;
+		font-size: 18px;
+		line-height: 1.666;
+		color: rgba(255, 255, 255, .75);
+	}
+	.slide-content span.review-author {
+		display: block;
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 3.4545;
+		letter-spacing: .2em;
+		color: rgba(255, 255, 255, .3);
+		margin-top: 25px;
+	}
+	.slick-dots {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: 30px;
+	}
+	.slick-dots li {
+		display: inline-block;
+		width: 9px;
+		height: 9px;
+		background-color: rgba(255, 255, 255, .8);
+		border: 1px solid #000;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.slick-dots li button {
+		display: none;
+	}
+	.slick-dots li+li {
+		margin-left: 5px;
+	}
+	.slick-dots li.slick-active {
+		background-color: #000;
+		border-color: rgba(255, 255, 255, .8);
+	}
+	.slick-arrow {
+		position: absolute;
+		height: 100%;
+		top:0;
+		z-index: 1;
+		width: 90px;
+		cursor: pointer;
+	}
+	.slick-arrow.slick-prev {
+		left: 0;
+	}
+	.slick-arrow.slick-next {
+		right: 0;
+	}
+	.slick-arrow .carousel-button{
+		width: 63px;
+		height: 63px;
+		background: #fff;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 50%;
+		margin-left: -32px;
+		margin-top: -31px;
+	}
+	.slick-arrow.slick-next .carousel-button{
+		right: 0;
+		margin-right: -32px;
+	}
+	.slick-arrow .carousel-button .fa {
+		position: absolute;
+		transform: rotate(45deg);
+		font-size: 10px;
+	}
+	.slick-arrow.slick-prev .carousel-button .fa {
+		bottom: 14px;
+		right: 17px;
+	}
+	.slick-arrow.slick-next .carousel-button .fa {
+		top: 14px;
+		left: 17px;
+	}
+	/*---------review carousel end----*/
 	/*---------news-------------------*/
 	.news .section-title{
 		position: relative;
@@ -455,7 +655,9 @@ blockquote {
 	.news a{
 		display: inline-block;
 		position: absolute;
-		right: 0;	
+		right: 0;
+		color:#999;
+		line-height: 17px;	
 	}
 	.news a:hover{
 		color:#111;
@@ -491,7 +693,7 @@ blockquote {
 		-webkit-filter: none;
 		filter: none;
 	}
-	/*-------news end--------*/
+	/*-------news end-------*/
 	/*-------subscribe-----*/
 	.subscribe form .form-control {
 		max-width: 290px;
@@ -500,4 +702,25 @@ blockquote {
 		margin-top: 17px;
 	}
 	/*-------subscribe end-----*/
+	/*------ contact  ---------*/
+	.contact-item .contact-item-content {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 15px;
+	}
+	.contact-item .contact-item-content span {
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.contact-item-content .contact-title {
+		font-family: 'Dosis', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: .3em;
+	}
+	.contact-item-content .contact-data {
+		line-height: 2;
+		color:#444444;
+	}
+	/*------ contact end ------*/
 	/* ===== Custom styles end ===== */
