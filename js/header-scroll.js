@@ -8,10 +8,11 @@
 	function onScroll(e) {
 		let pos = $(window).scrollTop();
 
-        if (pos > headerHeight +100) {
+        if (pos > headerHeight + 100) {
         	header.css({
         		'position': 'fixed',
-        		'top' : `-${headerHeight}px`,
+        		// 'top' : `-${headerHeight}px`,
+                'top' : '-${headerHeight}px',
         		'background': '#000'
         	});
         }
