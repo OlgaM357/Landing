@@ -1,3 +1,4 @@
+'use strict';
  $( function() {
  	//Init tabs
  	$( "#tabs" ).tabs();

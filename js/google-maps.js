@@ -5,7 +5,7 @@
 // google.maps.event.addDomListener(window, 'load', initMap);
 
 // window.addEventListener('load', initMap);
-
+'use strict';
 function initMap() {
 // Basic options for a simple Google Map
 

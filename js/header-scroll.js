@@ -1,4 +1,7 @@
-;(function($) {
+
+'use strict';
+
+(function($) {
 	// Header on scroll
 	const header = $('.header');
 
