@@ -11,7 +11,7 @@ body{
 	color: #777;
 	font: 300 15px/1 'Open Sans', sans-serif;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-weight: normal;
 }
@@ -25,7 +25,7 @@ a{
 a:hover, a:active{
 	text-decoration: none;
 }
-ul, ol{
+ul, ol {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -46,7 +46,7 @@ button {
 textarea {
 	resize: vertical;
 }
-input[type="submit"]{
+input[type="submit"] {
 	cursor: pointer;
 }
 blockquote {
@@ -76,6 +76,12 @@ blockquote {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.pull-left {
+		float: left;
+	}
+	.pull-right {
+		float: right;
 	}
 	/* ===== Default classes end */
 	/* ===== Default component start ===== */
@@ -118,13 +124,12 @@ blockquote {
 		font-weight: 300;
 		line-height: 1.7333;
 	}
-	.default-text-small{
-		font-family: 'Dosis', sans-serif;
+	.default-text-small {
 		font-size: 11px;
 		text-transform: uppercase;
 		letter-spacing: .4em;
 		font-weight: 400;
-		color: #999;
+		color: #777;
 	}
 	.default-text {
 		font-size: 14px;
@@ -161,7 +166,7 @@ blockquote {
 		letter-spacing: .2em;
 		line-height: 1;
 	}
-	.btn[disabled]{
+	.btn[disabled] {
 		cursor: not-allowed;
 		opacity: .6;
 	}
@@ -183,11 +188,11 @@ blockquote {
 		padding: 7px 15px;
 		font-size: 11px;
 	}
-	.form-control{
+	.form-control {
 		width: 100%;
 		border: 1px solid #e5e5e5;
 		border-radius: 2px;
-		height: 36px;
+		height: 37px;
 		font-size: 12px;
 		font-family: 'Open Sans';
 		font-weight: 400;
@@ -196,20 +201,21 @@ blockquote {
 		color: #777;
 		padding-left: 13px;
 		padding-right: 13px;
+		background-color: #fff;
 	}
-	.form-control:focus{
+	.form-control:focus {
 		border-color: #111;
 	}
-	textarea.form-control{
-		min-height: 82px;
+	textarea.form-control {
+		min-height: 84px;
 		padding-top: 10px;
 	}
 	.form-control[disabled],
-	.form-control.disabled{
+	.form-control.disabled {
 		cursor: not-allowed;
 		opacity: .6;
 	}
-	.form-control.error{
+	.form-control.error {
 		border-color: #f57e7e;
 	}
 	.form-info {
@@ -229,33 +235,39 @@ blockquote {
 		line-height: 23px;
 		border-radius: 2px;
 		font-size: 14px;
-		-webkit-transform: rotate(45deg);
-		-ms-transform: rotate(45deg);
-		-o-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
-	.rhomb-icon i{
-		-webkit-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
-		-o-transform: rotate(-45deg);
+	.rhomb-icon i {
 		transform: rotate(-45deg);
 	}
-	.rhomb-icon.black-icon{
+	.rhomb-icon.black-icon {
 		color:#fff;
 		background-color: #111;
 	}
-	.rhomb-icon.transparent-iblack-icon.social-item-icon {	
-		display: inline-block;
-		width:25px;
-		height:25px;
+	.rhomb-icon.transparent-iblack-icon.social-item-icon {
+		width: 24px;
+		height: 24px;	
+		line-height: 1.45;
 		background-color: rgba(255, 255, 255, 1);
+		border: 1px solid #5e5e5e;
+		color:#383838;
+	}
+	.rhomb-icon.transparent-iblack-icon.social-item-icon:hover {	
 		border: 1px solid #000;
-		color:#111;
+		color:#000;
+	}
+	.arrow-ap {
+		font-size: 50px;
+		color: #c6c6c6;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		cursor: pointer;
 	}
 	/*-------  header  ------*/
 	.header {
 		overflow: hidden;
-		position: fixed;
+		position: absolute;
 		padding: 30px 0;
 		top: 0;
 		width: 100%;
@@ -270,11 +282,8 @@ blockquote {
 	.header .header-nav li {
 		float: left;
 		color: rgba(255, 255, 255, .75);
-		font-size: 11px;
-		font-weight: 400;
-		text-transform: uppercase;
 		letter-spacing: .3em;
-		line-height: 23px;	
+		line-height: 2.1;	
 	}
 	.header .header-nav li+li {
 		margin-left: 35px;
@@ -282,56 +291,40 @@ blockquote {
 	/*--------  header end ---*/
 	/*--------  footer  ------*/
 	.footer{
+		background-color: #f8f8f8;
 		position: relative;
 		padding-top: 140px;
 		padding-bottom: 60px;
 	}
 	.footer-content.logo {
 		display: inline;
-		max-width: 78px;
+		max-width: 80px;
 	}
 	.footer-nav {
 		margin-top: 22px;
 	}
 	.footer .footer-nav li{
 		display: inline-block;
-		width: 4%;
 	}
 	.footer .footer-nav li + li{
-		margin-left: 10px;
+		margin-left: 15px;
 	}
-	.footer span{
+	.footer .footer-info {
 		display: block;
 		font-size: 12px;
-		font-family: 'Dosis';
-		font-weight: 400;
-	}
-	.footer span.footer-info{
-		text-transform: uppercase;
-		letter-spacing: .3em;
+		letter-spacing: .5em;
+		line-height: 2;
 		color: #111;
 		margin-top: 108px;
 	}
 	.footer .footer-info i {
-		margin-right: 15px;
+		margin-right: 5px;
 	}
-	.rhomb-icon.transparent-iblack-icon.social-item-icon{
-
-	}
-	.footer span.footer-text {
-		color: #777;
+	.footer .footer-text {
+		color: #999;
+		font-size: 11px;
 		margin-top: 15px;
-	}
-	.triangle-up {
-		width: 0;
-		height: 0;
-		border-bottom: 25px solid rgba(198, 198, 198, .5);
-		border-left: 30px solid transparent;
-		border-right: 30px solid transparent;
-		border-radius: 3px;
-		position: fixed;
-		bottom: 25px;
-		right: 30px;
+		line-height: 2.1818;
 	}
 	/*------  footer end  -----*/
 	/* ===== Default component end ===== */
@@ -375,8 +368,16 @@ blockquote {
 		margin-top: 100px;
 		color: #fefefe;
 	}
+	.inner .down-arrow .rhomb-icon.transparent-iblack-icon.social-item-icon{
+		border: none;
+		position: absolute;
+		bottom: 35px;
+		line-height: 1.75;
+		color: #222;
+		cursor: pointer;
+	}
 	/*----------inner end-------*/
-	/*----------about-studio*/
+	/*----------about-studio----*/
 	.team-wrapper {
 		margin-top: 100px;
 	}
@@ -384,26 +385,11 @@ blockquote {
 		position: relative;
 		max-width:372px;
 	}
-	.team-item .team-item-skills{
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #000;
-		transition: all .2s linear;
-		padding: 35px 40px 100px 40px;
-	}
-	.team-item .team-item-img:hover .team-item-skills{
-		opacity: 1;
-	}
-	.team-item span{
-		display: block;
-	}	
 	.team-item .team-item-info{
 		font-weight: 400;
 		text-indent: .4em;
 		letter-spacing: .4em;
+		color: #777;
 	}
 	.team-item-info .team-item-name{
 		font-size: 15px;
@@ -413,6 +399,22 @@ blockquote {
 		font-size: 12px;
 		margin-top: 15px;
 	}
+	.team-item .team-item-skills{
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		transition: all .2s linear;
+		padding: 35px 40px 95px 40px;
+	}
+	.team-item .team-item-img:hover .team-item-skills{
+		opacity: 1;
+	}
+	.team-item span{
+		display: block;
+	}	
 	.team-item-skills .skills-title{
 		font-size: 18px;
 		letter-spacing: .3em;
@@ -424,36 +426,97 @@ blockquote {
 		line-height: 21px;
 		color:rgba(255,255,255,.5);
 		font-weight: 400;
-		margin-top: 30px;
+		margin-top: 10px;
+		margin-bottom: 25px
 	}
-	.bars{
-		padding-top: 40px;
+	.skill-name {
+		display: block;
 		color: rgba(255, 255, 255, .9);
-		font-size: 11px;
-		font-weight: 400;
-		text-transform: uppercase;
 		letter-spacing: .2em;
-		line-height: 38px;
+		line-height: 2;
 	}
-	.about-studio{
+	.skill-item + .skill-item {
+		margin-top: 15px;
+	}
+	.progress-wrapp {
+		width: 100%;
+		height: 12px;
+		background-color: rgba(255, 255, 255, .15);
+	}
+	.progress-wrapp .progress{
+		width: 0%;
+		height: 12px;
+		background-color: rgba(255, 255, 255, .75);
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.progress-wrapp .progress.branding{
+		transition: width .5s ease-out;
+	}
+	.progress-wrapp .progress.design{
+		transition: width .5s ease-out .1s;
+	}
+	.progress-wrapp .progress.development{
+		transition: width .5s ease-out .2s;
+	}
+	.progress-wrapp .progress.photography{
+		transition: width .5s ease-out .3s;
+	}
+	.team-item .team-item-img.thomas:hover .branding{
+		width: 90%;	
+	}
+	.team-item .team-item-img.thomas:hover .progress.design{
+		width: 80%;	
+	}
+	.team-item .team-item-img.thomas:hover .progress.development{
+		width: 75%;	
+	}
+	.team-item .team-item-img.thomas:hover .progress.photography{
+		width: 70%;	
+	}
+	.team-item .team-item-img.marta:hover .branding{
+		width: 70%;	
+	}
+	.team-item .team-item-img.marta:hover .progress.design{
+		width: 90%;	
+	}
+	.team-item .team-item-img.marta:hover .progress.development{
+		width: 50%;	
+	}
+	.team-item .team-item-img.marta:hover .progress.photography{
+		width: 90%;	
+	}
+	.team-item .team-item-img.steve:hover .branding{
+		width: 70%;	
+	}
+	.team-item .team-item-img.steve:hover .progress.design{
+		width: 60%;	
+	}
+	.team-item .team-item-img.steve:hover .progress.development{
+		width: 95%;	
+	}
+	.team-item .team-item-img.steve:hover .progress.photography{
+		width: 70%;	
+	}
+	.about-studio {
 		border-bottom: 1px dotted #ececec;
 	}
 	/*-------about-studio and----*/
 	/*-------services------------*/
-	#tabs .tabs-nav{
+	#tabs .tabs-nav {
 		overflow: hidden;
 		margin-bottom: 80px;
 	}
-	#tabs .tabs-nav li{
+	#tabs .tabs-nav li {
 		float: left;
 		width: 20%;
 		color: rgba(17, 17, 17, .5);
 		text-align: center;
 	}
-	#tabs .tabs-nav li span{
+	#tabs .tabs-nav li span {
 		display: block;
 	}
-	#tabs .icon{
+	#tabs .icon {
 		font-size: 48.01px;
 		letter-spacing: .5em;
 		margin-bottom: 35px;
@@ -476,19 +539,19 @@ blockquote {
 	}
 	/*----------lets-talk end--------*/
 	/*----------portfolio------------*/
-	.portfolio{
+	.portfolio {
 		margin-top: 135px;
 	}
-	.portfolio p{
+	.portfolio p {
 		display: inline-block;
 		max-width: 754px;
 		line-height: 1.7333;
 	}
 	#tabs-portfolio {
 		overflow: hidden;
-		margin:  82px -15px 5px -15px;
+		margin:  82px -15px 0 -15px;
 	}
-	#tabs-portfolio .tabs-nav li{
+	#tabs-portfolio .tabs-nav li {
 		display: inline-block;
 		font-family: 'Dosis', sans-serif;
 		font-size: 13px;
@@ -500,63 +563,59 @@ blockquote {
 	#tabs-portfolio .tabs-nav li + li {
 		margin-left: 65px;
 	}
-	#tabs-portfolio .tabs-nav .ui-state-active a{
+	#tabs-portfolio .tabs-nav .ui-state-active a {
 		color:#111;
 	}
-	.portfolio-item-wrapper{
-		margin: 80px -4px 0 -4px;
+	.portfolio-item-wrapper {
+		margin: 80px -5px 0 -5px;
 	}
-	.portfolio-item{
+	.portfolio-item {
 		width: 33.3333%;
 		float: left;
-		padding: 0 4px;
+		padding: 5px;
 	}
-	.portfolio-item+.portfolio-item{
-		margin-top: 5px;
-	}
-	.portfolio-item img{
+	.portfolio-item img {
 		width:100%;
-		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		transition: .2s;	
 	}
-	.portfolio-item img:hover{
+	.portfolio-item img:hover {
 		filter: none;
 	}
 	/*----------portfolio end--------*/
 	/*----------like-our-------------*/
-	.like-our-content span{
-		display: block;
-		margin-bottom: 20px;
+	.like-our .title.section-title-light.title-white {
+		line-height: 1.44;
+		margin-bottom: 23px;
 	}
 	/*----------like-our end---------*/
 	/*----------why-choose-----------*/
-	.why-choose .row+.row{
+	.why-choose .row + .row {
 		margin-top: 80px;
 	}
 	.icon-why-choose{
-		font-size: 80px;
+		font-size: 48.01px;
 		color: #111;
 		margin-bottom: 50px; 
 	}
-	.why-choose .title-why-choose{
+	.why-choose .title-why-choose {
 		margin-bottom: 30px;
 	}
 	/*---------why-choose end---------*/
 	/*---------review carousel--------*/
-	.reviews-carousel{
+	.reviews-carousel {
 		padding: 135px 0;
 		overflow: hidden;
 		text-align: center;
 	}
-	.reviews-carousel::before{
+	.reviews-carousel::before {
 		content: '';
 		display: inline-block;
 		height: 100%;
 		vertical-align: middle;
 		margin-left: -4px;
 	}
-	.slide-content{
+	.slide-content {
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -565,7 +624,7 @@ blockquote {
 		line-height: 1.5;
 		color: #fff;
 	}
-	.reviews-carousel p{
+	.reviews-carousel p {
 		max-width: 735px;
 		font-size: 18px;
 		line-height: 1.666;
@@ -573,8 +632,6 @@ blockquote {
 	}
 	.slide-content span.review-author {
 		display: block;
-		font-size: 11px;
-		font-weight: 400;
 		line-height: 3.4545;
 		letter-spacing: .2em;
 		color: rgba(255, 255, 255, .3);
@@ -619,7 +676,7 @@ blockquote {
 	.slick-arrow.slick-next {
 		right: 0;
 	}
-	.slick-arrow .carousel-button{
+	.slick-arrow .carousel-button {
 		width: 63px;
 		height: 63px;
 		background: #fff;
@@ -629,7 +686,7 @@ blockquote {
 		margin-left: -32px;
 		margin-top: -31px;
 	}
-	.slick-arrow.slick-next .carousel-button{
+	.slick-arrow.slick-next .carousel-button {
 		right: 0;
 		margin-right: -32px;
 	}
@@ -653,14 +710,19 @@ blockquote {
 		padding: 10px 0;
 	}
 	.news a{
+		font-family: 'Dosis', sans-serif; 
 		display: inline-block;
 		position: absolute;
 		right: 0;
 		color:#999;
-		line-height: 17px;	
+		line-height: 1.5454;	
 	}
 	.news a:hover{
 		color:#111;
+	}
+	.news-info {
+		font-family: 'Dosis', sans-serif;
+		color: #999; 
 	}
 	.news-item span{
 		display: block;
@@ -685,16 +747,14 @@ blockquote {
 	}
 	.news-item img{
 		padding-bottom: 30px;
-		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		transition: .2s;
 	}
 	.news-item img:hover {
-		-webkit-filter: none;
 		filter: none;
 	}
 	/*-------news end-------*/
-	/*-------subscribe-----*/
+	/*-------subscribe------*/
 	.subscribe form .form-control {
 		max-width: 290px;
 	}
@@ -703,6 +763,9 @@ blockquote {
 	}
 	/*-------subscribe end-----*/
 	/*------ contact  ---------*/
+	.contact-items-wrapper {
+		margin-bottom: 80px;
+	}
 	.contact-item .contact-item-content {
 		display: inline-block;
 		vertical-align: middle;
@@ -722,5 +785,76 @@ blockquote {
 		line-height: 2;
 		color:#444444;
 	}
-	/*------ contact end ------*/
+	.contact-form {
+		overflow: hidden;
+		margin: 0 -10px;
+	}
+	.contact-form .form-col {
+		float: left;
+		width: 50%;
+		padding: 0 5px;
+		margin-bottom: 20px;
+	}
+	.contact-form .form-control + .form-control {
+		margin-top: 10px;
+	}
+	.contact-form .form-info {
+		line-height: 37px;
+	}
+	.contact-form .form-info i{
+		margin-left: 5px;
+	}
+	.contact-form button {
+		margin-right: 5px;
+	}
+	/*------ contact end -----*/
+	/*------ map start -------*/
+	#map {
+		height: 410px;
+	}
+	.map-container {
+		position: relative;
+	}
+	.on-map-block {
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(17, 17, 17, .95);
+		overflow: hidden;
+	}
+	.on-map-block .map-block-content {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.on-map-block::before {
+		content: "";
+		display: inline-block;
+		min-height: inherit;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.on-map-block .rhomb-icon.transparent-iblack-icon.social-item-icon  {
+		width: 30px;
+		height: 30px;
+		line-height: 1.8;
+		background-color: rgb(255, 255, 255);
+		color:#222;
+		border-radius: 3px;
+	}
+	.on-map-block span {
+		display: block;
+		margin-top: 25px;
+		font-family: 'Dosis', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: .3em;
+		color: rgba(255, 255, 255, .75);
+	}
+	.map-container:hover .on-map-block {
+		display: none;
+	}
+	/*------ map end ------*/
 	/* ===== Custom styles end ===== */
