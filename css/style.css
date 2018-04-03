@@ -89,11 +89,25 @@ blockquote {
 /*Buttons, text, title, section, small-section header, footer,
  form elements, icons, tabs, blockquote, container
  */
+
  .default-section {
  	padding: 135px 0;
  }
  .small-section {
  	padding: 70px 0;
+ }
+ @media (max-width: 767px) {
+ 	.default-section {
+ 		padding: 90px 0;
+ 	}
+ }
+ @media (max-width: 575px) {
+ 	.default-section {
+ 		padding: 70px 0;
+ 	}
+ 	.small-section {
+ 		padding: 50px 0;
+ 	}
  }
  .container {
  	max-width: 1200px;
@@ -410,6 +424,13 @@ blockquote {
  		position: relative;
  	}
  }
+ @media (max-width: 575px){
+ 	.inner .inner-title {
+ 		font-size: 20px;
+ 		text-indent: .3em;
+ 		letter-spacing: .3em;
+ 	}
+ }
  /*----------inner end-------*/
  /*----------about-studio----*/
  .team-wrapper {
@@ -534,14 +555,6 @@ blockquote {
  }
  .about-studio {
  	border-bottom: 1px dotted #ececec;
- }
- @media (max-width: 991px) {
- 	.team-item-info .team-item-name{
- 		font-size: 12px;
- 	}
- 	.team-item-info .team-item-role{
- 		font-size: 9px;
- 	}
  }
  @media (max-width: 767px) {
  	.about-studio{
@@ -699,6 +712,11 @@ blockquote {
  	line-height: 1.44;
  	margin-bottom: 23px;
  }
+ @media (max-width: 575px){
+ 	.like-our .title.section-title-light.title-white {
+ 		letter-spacing: .2em;
+ 	}
+ }
  /*----------like-our end---------*/
  /*----------why-choose-----------*/
  .why-choose .row + .row {
@@ -825,7 +843,7 @@ blockquote {
  }
  @media (max-width: 767px) {
  	.reviews-carousel p {
- 		max-width: 435px;
+ 		padding: 0 60px;
  	}
  	.reviews-carousel {
  		padding: 50px 0 60px 0;
@@ -896,6 +914,14 @@ blockquote {
  		margin-bottom: 45px;
  	}
  }
+ @media (max-width: 575px) {
+ 	.news .title.section-title span{
+ 		letter-spacing: .2em;
+ 	}
+ 	.news a{
+ 		letter-spacing:.1em;
+ 	}
+ }
  /*-------news end-------*/
  /*-------subscribe------*/
  .subscribe form .form-control {
@@ -903,6 +929,15 @@ blockquote {
  }
  .subscribe .form-info {
  	margin-top: 17px;
+ }
+ @media (max-width: 575px) {
+ 	.subscribe form .form-control {
+ 		margin-bottom: 20px;
+ 	}
+ 	.subscribe .title.section-title-light {
+ 		font-size: 16px;
+ 		letter-spacing: .1em;
+ 	}
  }
  /*-------subscribe end-----*/
  /*------ contact  ---------*/
@@ -955,7 +990,7 @@ blockquote {
  	}
  	.contact-items-wrapper .col {
  		width: 100%;
-        text-align: center;
+ 		text-align: center;
  	}
  	.contact-items-wrapper .col + .col{
  		margin-top: 25px;
@@ -966,6 +1001,17 @@ blockquote {
  	}
  	.contact-item-content {
  		letter-spacing: 2px;
+ 	}
+ }
+ @media (max-width: 575px) {
+ 	.contacts {
+ 		text-align: center;
+ 	}
+ 	.contact-form .form-info{
+ 		width: 100%;
+ 	}
+ 	.contact-form button[type="submit"] {
+ 		float: none;
  	}
  }
  /*------ contact end -----*/
