@@ -1,38 +1,37 @@
-
 'use strict';
 
 (function($) {
-	// Header on scroll
-	const header = $('.header');
+    // Header on scroll
+    const header = $('.header');
 
-	const windowHeight = $(window).height();
-	const headerHeight = header.outerHeight();
+    const windowHeight = $(window).height();
+    const headerHeight = header.outerHeight();
 
-	function onScroll(e) {
-		let pos = $(window).scrollTop();
+    function onScroll(e) {
+        let pos = $(window).scrollTop();
 
         if (pos > headerHeight + 100) {
-        	header.css({
-        		'position': 'fixed',
-        		// 'top' : `-${headerHeight}px`,
+            header.css({
+                'position': 'fixed',
+                // 'top' : `-${headerHeight}px`,
                 'top' : '-${headerHeight}px',
-        		'background': '#000'
-        	});
+                'background': '#000'
+            });
         }
         if (pos > windowHeight) {
-        	header.css({
-        		'top' : '0',
-        		'transition' : 'top .3s ease-out'
-        	});
+            header.css({
+                'top' : '0',
+                'transition' : 'top .3s ease-out'
+            });
         }
 
         if (pos < headerHeight + 100) {
-        	header.css({
-        		'position': 'absolute',
-        		'top' : '0',
-        		'background': 'transparent',
-        		'transition' : 'none'
-        	});
+            header.css({
+                'position': 'absolute',
+                'top' : '0',
+                'background': 'transparent',
+                'transition' : 'none'
+            });
         }
     }
 

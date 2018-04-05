@@ -19,7 +19,7 @@
   css/font-awesome.css      | Стили иконочного шрифта
   css/style.css             | Стили проекта
   js/google-maps.js         | Скрипт для подключения карты
-  js/header-scroll.js       | Скрипт для прилипания заголовока к вершине, при прокрутки вниз.
+  js/header-scroll.js       | Скрипт для прилипания заголовка к вершине, при прокрутке вниз.
   js/scroll-to.js           | Скрипт позволяет плавно проскролить страницу до определенного элемента
   js/jquery.slicknav.min.js | Скрипт подключение меню для мобильной версии
   js/init.js                | Скрипт файл
@@ -98,8 +98,8 @@
   1. rhomb-icon                                               - общие стили для иконок
   2. rhomb-icon i                                             - стили для иконочного шрифта
   3. rhomb-icon.black-icon                                    - стили для иконок черный фон, белый шрифт
-  4. rhomb-icon.transparent-iblack-icon.social-item-icon      - стили для иконок прозрачный фон, серый шрифт
-  5. rhomb-icon.transparent-iblack-icon.social-item-icon:hover -стили при наведении на иконку с прозрачныйь фоном
+  4. rhomb-icon.transparent-icon.social-item-icon             - стили для иконок прозрачный фон, серый шрифт
+  5. rhomb-icon.transparent-icon.social-item-icon:hover       - стили при наведении на иконку с прозрачныйь фоном
   6. arrow-ap
 
   ---

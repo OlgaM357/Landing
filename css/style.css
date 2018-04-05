@@ -319,7 +319,7 @@ textarea.form-control {
     background-color: #111;
 }
 
-.rhomb-icon.transparent-iblack-icon.social-item-icon {
+.rhomb-icon.transparent-icon.social-item-icon {
     width: 24px;
     height: 24px;
     line-height: 1.45;
@@ -328,7 +328,7 @@ textarea.form-control {
     color: #383838;
 }
 
-.rhomb-icon.transparent-iblack-icon.social-item-icon:hover {
+.rhomb-icon.transparent-icon.social-item-icon:hover {
     border: 1px solid #000;
     color: #000;
 }
@@ -490,7 +490,7 @@ textarea.form-control {
     bottom: 35px;
 }
 
- .rhomb-icon.transparent-iblack-icon.social-item-icon {
+.inner .rhomb-icon.transparent-icon.social-item-icon {
     border: none;
    
     line-height: 1.75;
@@ -1273,7 +1273,7 @@ p.news-text {
     vertical-align: middle;
 }
 
-.on-map-block .rhomb-icon.transparent-iblack-icon.social-item-icon {
+.on-map-block .rhomb-icon.transparent-icon.social-item-icon {
     width: 30px;
     height: 30px;
     line-height: 1.8;

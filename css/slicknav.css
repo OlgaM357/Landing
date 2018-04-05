@@ -64,7 +64,7 @@
 }
 .slicknav_btn.slicknav_open .slicknav_icon-bar:last-child {
   transform: rotate(-45deg);
-   -webkit-transform-origin: left;
+  -webkit-transform-origin: left;
   -moz-transform-origin: left;
   -ms-transform-origin: left;
   -o-transform-origin: left;
@@ -111,11 +111,9 @@
 .slicknav_nav .slicknav_parent-link a {
   display: inline;
 }
-
 .slicknav_brand {
   float: left;
 }
-
 .slicknav_menu {
   font-size: 16px;
   box-sizing: border-box;
@@ -132,7 +130,6 @@
 .slicknav_menu .slicknav_icon-bar {
   background-color: #fff;
 }
-
 .slicknav_btn {
   margin: 5px 5px 6px;
   text-decoration: none;
@@ -173,12 +170,12 @@
   border-radius: 6px;
   background-color: #ccc;
   color: #fff;
-   transition: 1s;
+  transition: 1s;
 }
 .slicknav_nav a {
   padding: 10px 15px;
   text-decoration: none;
-   font-size: 16px;
+  font-size: 16px;
   color: #fff;
 
 }
