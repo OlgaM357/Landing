@@ -1,3 +1,4 @@
+'use strict';
 // Google Maps JS & Settings Coordinates
 // When the window has finished loading create our google map below
 // https://developers.google.com/maps/documentation/

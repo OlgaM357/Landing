@@ -485,10 +485,14 @@ textarea.form-control {
     color: rgba(254, 254, 254, .68);
 }
 
-.inner .down-arrow .rhomb-icon.transparent-iblack-icon.social-item-icon {
-    border: none;
-    position: absolute;
+.inner .down-arrow {
+     position: absolute;
     bottom: 35px;
+}
+
+ .rhomb-icon.transparent-iblack-icon.social-item-icon {
+    border: none;
+   
     line-height: 1.75;
     color: #222;
     cursor: pointer;
@@ -743,6 +747,10 @@ textarea.form-control {
 
     .tabs-nav li:nth-child(3) ~ li {
         margin-top: 40px;
+    }
+
+    .tabs-nav li:nth-child(4) {
+        margin-left: 17%;
     }
 
     #tabs .col:first-child ~ .col .services-text {
