@@ -120,3 +120,4 @@
   * @media (max-width: 991px) - устройства c разрешением до 992px
   * @media (max-width: 767px) - устройства c разрешением до 768px
   * @media (max-width: 575px) - мобильные устройства c разрешением до 576px
+"# Lending" 
