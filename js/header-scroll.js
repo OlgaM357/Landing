@@ -1,5 +1,3 @@
-'use strict';
-
 (function($) {
     // Header on scroll
     const header = $('.header');
@@ -13,8 +11,7 @@
         if (pos > headerHeight + 100) {
             header.css({
                 'position': 'fixed',
-                // 'top' : `-${headerHeight}px`,
-                'top' : '-${headerHeight}px',
+                'top' : `-${headerHeight}px`,
                 'background': '#000'
             });
         }
@@ -36,5 +33,6 @@
     }
 
     $(window).on('scroll', onScroll);
+    $(window).on('load', onScroll);
 
 })(jQuery);

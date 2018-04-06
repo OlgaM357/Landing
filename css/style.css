@@ -1,6 +1,7 @@
 /* ===== Reset start ===== */
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *:focus {
@@ -112,7 +113,7 @@ blockquote {
  form elements, icons, tabs, blockquote, container
  */
 
-.default-section {
+ .default-section {
     padding: 135px 0;
 }
 
@@ -307,11 +308,15 @@ textarea.form-control {
     line-height: 23px;
     border-radius: 2px;
     font-size: 14px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .rhomb-icon i {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .rhomb-icon.black-icon {
@@ -486,13 +491,12 @@ textarea.form-control {
 }
 
 .inner .down-arrow {
-     position: absolute;
-    bottom: 35px;
+ position: absolute;
+ bottom: 35px;
 }
 
 .inner .rhomb-icon.transparent-icon.social-item-icon {
     border: none;
-   
     line-height: 1.75;
     color: #222;
     cursor: pointer;
@@ -557,6 +561,8 @@ textarea.form-control {
     width: 100%;
     height: 100%;
     background-color: #000;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
     transition: all .2s linear;
     padding: 35px 40px 95px 40px;
 }
@@ -611,18 +617,26 @@ textarea.form-control {
 }
 
 .progress-wrapp .progress.branding {
+    -webkit-transition: width .5s ease-out;
+    -o-transition: width .5s ease-out;
     transition: width .5s ease-out;
 }
 
 .progress-wrapp .progress.design {
+    -webkit-transition: width .5s ease-out .1s;
+    -o-transition: width .5s ease-out .1s;
     transition: width .5s ease-out .1s;
 }
 
 .progress-wrapp .progress.development {
+    -webkit-transition: width .5s ease-out .2s;
+    -o-transition: width .5s ease-out .2s;
     transition: width .5s ease-out .2s;
 }
 
 .progress-wrapp .progress.photography {
+    -webkit-transition: width .5s ease-out .3s;
+    -o-transition: width .5s ease-out .3s;
     transition: width .5s ease-out .3s;
 }
 
@@ -824,12 +838,16 @@ textarea.form-control {
 
 #tabs-portfolio .portfolio-item img {
     width: 100%;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 #tabs-portfolio .portfolio-item img:hover {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
 }
 
 @media (max-width: 991px) {
@@ -998,7 +1016,9 @@ textarea.form-control {
     width: 63px;
     height: 63px;
     background: #fff;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     position: absolute;
     top: 50%;
     margin-left: -32px;
@@ -1012,7 +1032,9 @@ textarea.form-control {
 
 .slick-arrow .carousel-button .fa {
     position: absolute;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     font-size: 10px;
 }
 
@@ -1089,12 +1111,16 @@ p.news-text {
 
 .news-item img {
     padding-bottom: 30px;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 .news-item img:hover {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
 }
 
 @media (max-width: 991px) {
